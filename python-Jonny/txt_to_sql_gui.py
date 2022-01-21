@@ -1,8 +1,6 @@
 # 写个GUI
 import PySimpleGUI as sg
 from txt_to_sql import txt_to_sql
-import json
-
 
 # 设置GUI布局
 layout = [
