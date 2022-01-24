@@ -2,13 +2,33 @@
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/88255dc400434ad4803fbaae3c3d721a.png)
 ```bash
-├── ctd2020-09-27.txt   # 原测试数据文件，已弃用
-├── data1   # 程序测试使用数据文件
-│   ├── 1.txt
-│   ├── 2.txt
-│   └── 3.txt
-├── mysql  # mysql测试使用 创建数据表、插入基本数据
+.
+├── Pipfile  
+├── Pipfile.lock
+├── Readme.md  
+├── Version  # 打包好的程序
+│   ├── txt_to_mysql0.1-mac.zip
+│   ├── txt_to_mysql0.1-win.zip
+│   ├── txt_to_mysql1.0-mac.zip
+│   └── txt_to_mysql1.0-win.7z
+├── __pycache__
+│   └── txt_to_sql.cpython-310.pyc
+├── requirements.txt  # 项目使用到的第三方Python包
+├── resources  
+│   ├── ctd2020-09-27.txt   # 原测试数据文件，已弃用
+│   ├── data1  # 程序测试使用数据文件
+│   │   ├── 1.txt
+│   │   ├── 2.txt
+│   │   └── 3.txt
+│   └── mysql  # mysql测试使用 创建数据表、插入基本数据
+├── start.bat   # .bat windows 下直接运行程序，需要自己配置环境，修改配置
+├── txt_to_mysql1.0.py   # 项目代码1.0.1 整体版本
+├── txt_to_mysql_config.json   # 项目自动生成的配置文件
+├── txt_to_sql.py   # 项目文件 数据处理部分
+└── txt_to_sql_gui.py  # 项目文件 图形化操作界面部分
 ```
+
+
 
 进一步优化项目，更具适用性：
 - 支持用户直接加载文件夹，一次处理、存储同一文件夹下所有文件（需要文件格式一致、存入一张表的）
