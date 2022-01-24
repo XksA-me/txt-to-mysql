@@ -1,0 +1,19 @@
+USE sql_study;
+
+CREATE TABLE `testa`  (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键 自增id',
+  `a` bigint NULL,
+  `b` float(10, 5) NULL,
+  `c` varchar(255) NULL,
+  `d` date NULL,
+  `e` varchar(255) NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = 'Txt to mysql 测试表';
+
+INSERT INTO `testa`(a, b, c, d) VALUES(29, 30.2, "Jonny29", "2020/9/25");
+
+INSERT INTO `testa`(a, b, c, d) VALUES(30, 31.2, "Jonny30", "2020/9/25"),
+(31, 32.2, "Jonny31", "2020/9/25"),
+(32, 33.2, "Jonny32", "2020/9/25");
+
+SELECT * FROM testa;
